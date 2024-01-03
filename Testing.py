@@ -5,9 +5,11 @@ spark = SparkSession.builder \
         .getOrCreate()
 
 # Creating a DataFrame for testing:
+
 data = [("Java", "20000"), ("Python", "100000"), ("Scala", "3000")]
 columns = ["Language", "Users"]
 df = spark.createDataFrame(data).toDF(*columns)
 df.show()
 
+# Stopping the session:
 spark.stop()
