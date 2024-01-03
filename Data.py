@@ -41,3 +41,28 @@ df = df.withColumn('Cumulative YTD Previous MMWR Year', when(col('Cumulative YTD
 
 df.show(n=50, truncate=False, vertical=True)
 df.printSchema()
+
+from pyspark.sql.functions import col
+
+null_counts = {}
+for col_name in df.columns:
+    null_counts[col_name] = df.filter(col(col_name).isNull()).count()
+
+for column, count in null_counts.items():
+    print(f"Null count in {column}: {count}")
+
+
+pandas_df = df.toPandas()
+import matplotlib.pyplot as plt
+
+pandas_df['Current week'].plot(kind='hist', bins=50, title='Distribution of Current Week Cases')
+plt.xlabel('Number of Cases')
+plt.ylabel('Frequency')
+plt.show()
+
+from pyspark.sql import functions as F
+grouped_data = df.groupBy("Label").agg(
+    F.avg("Current week").alias("Average Current Week"),
+    F.max("Current week").alias("Max Current Week")
+)
+grouped_data.show()
