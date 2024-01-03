@@ -4,13 +4,14 @@ spark = SparkSession.builder \
     .appName("NNDSSDataAnalysis") \
     .getOrCreate()
 
-#Data Loading
+#Data Loading:
+
 df = spark.read.csv("Desktop/Datasets/NNDSS_Weekly_Data.csv", header=True, inferSchema=True)
 df.printSchema()
 df.show(n=5)
 
 
-#Data Preprocessing
+#Data Preprocessing:
 
 from pyspark.sql.functions import col, count, when
 zero_neg_empty_null_counts = {}
@@ -66,3 +67,20 @@ grouped_data = df.groupBy("Label").agg(
     F.max("Current week").alias("Max Current Week")
 )
 grouped_data.show()
+
+#Correlation Matrix
+
+from pyspark.ml.feature import StringIndexer, VectorAssembler
+from pyspark.ml.stat import Correlation
+from pyspark.sql.functions import when, col
+
+indexer = StringIndexer(inputCol="Label", outputCol="Label_Index")
+df_indexed = indexer.fit(df).transform(df)
+numeric_cols = [t[0] for t in df_indexed.dtypes if t[1] in ['int', 'double']]
+numeric_cols.append('Label_Index')
+
+assembler = VectorAssembler(inputCols=numeric_cols, outputCol="features")
+vector_df = assembler.transform(df_indexed)
+correlation_matrix = Correlation.corr(vector_df, "features").head()
+corr_df = spark.createDataFrame(correlation_matrix[0].toArray().tolist(), numeric_cols)
+corr_df.show(truncate=False)
