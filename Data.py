@@ -84,3 +84,10 @@ vector_df = assembler.transform(df_indexed)
 correlation_matrix = Correlation.corr(vector_df, "features").head()
 corr_df = spark.createDataFrame(correlation_matrix[0].toArray().tolist(), numeric_cols)
 corr_df.show(truncate=False)
+
+from pyspark.sql.functions import col
+
+df = df.withColumn('Total Cases', col('Cumulative YTD Current MMWR Year') + col('Cumulative YTD Previous MMWR Year'))
+disease_total_cases = df.groupBy("Label").sum("Total Cases")
+frequency_disease = disease_total_cases.orderBy('sum(Total Cases)', ascending=False).show()
+frequency_disease
