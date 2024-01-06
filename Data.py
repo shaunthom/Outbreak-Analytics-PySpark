@@ -105,3 +105,96 @@ area_total_cases_pd = area_total_cases.toPandas()
 import geopandas as gpd
 
 gdf = gpd.read_file('Desktop/Datasets/s_08mr23.shp')
+gdf.head()
+
+unique_reporting_areas = df.select("Reporting Area").distinct()
+
+unique_reporting_area_list = unique_reporting_areas.collect()
+for area in unique_reporting_area_list:
+    print(area["Reporting Area"])
+
+area_to_state_map = {
+    "SOUTH ATLANTIC": "Florida", 
+    "NEW JERSEY": "New Jersey",
+    "NORTHERN MARIANA ISLANDS": "Northern Mariana Islands",
+    "WISCONSIN": "Wisconsin",
+    "PENNSYLVANIA": "Pennsylvania",
+    "ILLINOIS": "Illinois",
+    "DISTRICT OF COLUMBIA": "District of Columbia",
+    "MARYLAND": "Maryland",
+    "WEST VIRGINIA": "West Virginia",
+    "MISSOURI": "Missouri",
+    "IDAHO": "Idaho",
+    "MONTANA": "Montana",
+    "EAST SOUTH CENTRAL": "Tennessee",  
+    "MICHIGAN": "Michigan",
+    "FLORIDA": "Florida",
+    "MIDDLE ATLANTIC": "New York", 
+    "OREGON": "Oregon",
+    "AMERICAN SAMOA": "American Samoa",
+    "US TERRITORIES": "Guam",  
+    "SOUTH DAKOTA": "South Dakota",
+    "LOUISIANA": "Louisiana",
+    "ALASKA": "Alaska",
+    "PUERTO RICO": "Puerto Rico",
+    "NEW ENGLAND": "Massachusetts", 
+    "MAINE": "Maine",
+    "MOUNTAIN": "Colorado", 
+    "NEW HAMPSHIRE": "New Hampshire",
+    "OKLAHOMA": "Oklahoma",
+    "VIRGINIA": "Virginia",
+    "WASHINGTON": "Washington",
+    "NORTH CAROLINA": "North Carolina",
+    "WYOMING": "Wyoming",
+    "WEST NORTH CENTRAL": "Minnesota", 
+    "TEXAS": "Texas",
+    "NEBRASKA": "Nebraska",
+    "MINNESOTA": "Minnesota",
+    "HAWAII": "Hawaii",
+    "GUAM": "Guam",
+    "RHODE ISLAND": "Rhode Island",
+    "WEST SOUTH CENTRAL": "Texas",  
+    "EAST NORTH CENTRAL": "Illinois",  
+    "MISSISSIPPI": "Mississippi",
+    "TENNESSEE": "Tennessee",
+    "COLORADO": "Colorado",
+    "NEVADA": "Nevada",
+    "VERMONT": "Vermont",
+    "U.S. VIRGIN ISLANDS": "Virgin Islands",
+    "NEW MEXICO": "New Mexico",
+    "NEW YORK": "New York",
+    "UTAH": "Utah",
+    "CALIFORNIA": "California",
+    "IOWA": "Iowa",
+    "KANSAS": "Kansas",
+    "ARIZONA": "Arizona",
+    "KENTUCKY": "Kentucky",
+    "NON-US RESIDENTS": "Guam", 
+    "OHIO": "Ohio",
+    "MASSACHUSETTS": "Massachusetts",
+    "SOUTH CAROLINA": "South Carolina",
+    "ALABAMA": "Alabama",
+    "DELAWARE": "Delaware",
+    "CONNECTICUT": "Connecticut",
+    "NORTH DAKOTA": "North Dakota",
+    "PACIFIC": "Hawaii", 
+    "ARKANSAS": "Arkansas",
+    "INDIANA": "Indiana",
+    "NEW YORK CITY": "New York",
+    "GEORGIA": "Georgia"
+}
+
+import pandas as pd
+
+
+mapping_df = spark.createDataFrame(pd.DataFrame(list(area_to_state_map.items()), columns=['Reporting Area', 'Mapped Reporting Area']))
+df_joined = df.join(mapping_df, on='Reporting Area', how='left')
+area_total_cases = df_joined.groupBy('Mapped Reporting Area').sum('Total Cases')
+area_total_cases_pd = area_total_cases.toPandas()
+
+merged_gdf = gdf.set_index('NAME').join(area_total_cases_pd.set_index('Mapped Reporting Area'))
+
+fig, ax = plt.subplots(1, 1, figsize=(15, 10))
+merged_gdf.plot(column='sum(Total Cases)', ax=ax, legend=True, cmap='OrRd')  # Adjust the column name if necessary
+plt.title('Total Cases by Reporting Area')
+plt.show()
