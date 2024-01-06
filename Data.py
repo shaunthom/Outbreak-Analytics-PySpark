@@ -4,14 +4,14 @@ spark = SparkSession.builder \
     .appName("NNDSSDataAnalysis") \
     .getOrCreate()
 
-#Data Loading:
+# Data Loading:
 
 df = spark.read.csv("Desktop/Datasets/NNDSS_Weekly_Data.csv", header=True, inferSchema=True)
 df.printSchema()
 df.show(n=5)
 
 
-#Data Preprocessing:
+# Data Preprocessing:
 
 from pyspark.sql.functions import col, count, when
 zero_neg_empty_null_counts = {}
@@ -38,7 +38,7 @@ df = df.drop('geocode', 'LOCATION1','LOCATION2','sort_order','Previous 52 week M
 df = df.withColumn('Cumulative YTD Current MMWR Year', when(col('Cumulative YTD Current MMWR Year').isNull(), 0).otherwise(col('Cumulative YTD Current MMWR Year')))
 df = df.withColumn('Cumulative YTD Previous MMWR Year', when(col('Cumulative YTD Previous MMWR Year').isNull(), 0).otherwise(col('Cumulative YTD Previous MMWR Year')))
 
-#Pre-processed Data Coming up:
+# Pre-processed Data Coming up:
 
 df.show(n=50, truncate=False, vertical=True)
 df.printSchema()
@@ -68,7 +68,7 @@ grouped_data = df.groupBy("Label").agg(
 )
 grouped_data.show()
 
-#Correlation Matrix
+# Correlation Matrix
 
 from pyspark.ml.feature import StringIndexer, VectorAssembler
 from pyspark.ml.stat import Correlation
@@ -86,7 +86,7 @@ corr_df = spark.createDataFrame(correlation_matrix[0].toArray().tolist(), numeri
 corr_df.show(truncate=False)
 
 
-#Frequency Analysis
+# Frequency Analysis
 df = df.withColumn('Total Cases', col('Cumulative YTD Current MMWR Year') + col('Cumulative YTD Previous MMWR Year'))
 disease_total_cases = df.groupBy("Label").sum("Total Cases")
 frequency_disease = disease_total_cases.orderBy('sum(Total Cases)', ascending=False).show()
