@@ -91,3 +91,17 @@ df = df.withColumn('Total Cases', col('Cumulative YTD Current MMWR Year') + col(
 disease_total_cases = df.groupBy("Label").sum("Total Cases")
 frequency_disease = disease_total_cases.orderBy('sum(Total Cases)', ascending=False).show()
 frequency_disease
+
+
+df = df.filter((df['Reporting Area'] != 'TOTAL') & (df['Reporting Area'] != "US RESIDENTS"))
+df = df.withColumn('Total Cases', col('Cumulative YTD Current MMWR Year') + col('Cumulative YTD Previous MMWR Year'))
+area_total_cases = df.groupBy("Reporting Area").sum("Total Cases")
+
+frequency_area = area_total_cases.orderBy('sum(Total Cases)', ascending=False).show()
+
+## GEOSPATIAL ANALYSIS
+
+area_total_cases_pd = area_total_cases.toPandas()
+import geopandas as gpd
+
+gdf = gpd.read_file('Desktop/Datasets/s_08mr23.shp')
