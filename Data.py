@@ -85,7 +85,6 @@ correlation_matrix = Correlation.corr(vector_df, "features").head()
 corr_df = spark.createDataFrame(correlation_matrix[0].toArray().tolist(), numeric_cols)
 corr_df.show(truncate=False)
 
-from pyspark.sql.functions import col
 
 #Frequency Analysis
 df = df.withColumn('Total Cases', col('Cumulative YTD Current MMWR Year') + col('Cumulative YTD Previous MMWR Year'))
