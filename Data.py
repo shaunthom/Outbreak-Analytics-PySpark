@@ -87,6 +87,7 @@ corr_df.show(truncate=False)
 
 from pyspark.sql.functions import col
 
+#Frequency Analysis
 df = df.withColumn('Total Cases', col('Cumulative YTD Current MMWR Year') + col('Cumulative YTD Previous MMWR Year'))
 disease_total_cases = df.groupBy("Label").sum("Total Cases")
 frequency_disease = disease_total_cases.orderBy('sum(Total Cases)', ascending=False).show()
