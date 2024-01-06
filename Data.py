@@ -198,3 +198,16 @@ fig, ax = plt.subplots(1, 1, figsize=(15, 10))
 merged_gdf.plot(column='sum(Total Cases)', ax=ax, legend=True, cmap='OrRd')  # Adjust the column name if necessary
 plt.title('Total Cases by Reporting Area')
 plt.show()
+
+#Magnifying on North America:
+
+fig, ax = plt.subplots(1, 1, figsize=(15, 10))
+merged_gdf.plot(column='sum(Total Cases)', ax=ax, legend=True, cmap='OrRd')
+
+ax.set_xlim(-130, -60)
+ax.set_ylim(20, 55)
+
+plt.title('Total Cases by Reporting Area')
+plt.show()
+
+# The map is a visual representation of case counts across the United States
