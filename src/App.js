@@ -6,6 +6,7 @@ import Frequency from './components/Frequency';
 import Correlation from './components/Correlation';
 import About from './components/About';
 import './App.css';
+import MapComponents from './MapComponents';
 
 function App() {
   return (
@@ -21,12 +22,12 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/model" component={Model} />
-          <Route path="/data" component={Data} />
-          <Route path="/frequency" component={Frequency} />
-          <Route path="/correlation" component={Correlation} />
-          <Route path="/about" component={About} />
-          <Route exact path="/" component={Model} />
+          <Route path="/model" element={<Model/>} />
+          <Route path="/data" element={<Data/>} />
+          <Route path="/frequency" element={<MapComponents/>} />
+          <Route path="/correlation" element={<Correlation/>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Model />} /> {/* Default route */}
         </Routes>
       </div>
     </Router>
