@@ -39,5 +39,4 @@ class MapComponents extends Component {
     );
   }
 }
-
 export default MapComponents;
