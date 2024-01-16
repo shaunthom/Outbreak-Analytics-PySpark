@@ -15,4 +15,4 @@ const Frequency = () => {
   );
 };
 
-export default Frequency;
+// export default Frequency;
