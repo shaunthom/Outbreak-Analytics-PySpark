@@ -8,5 +8,4 @@ const Data = () => {
     </div>
   );
 };
-
 export default Data;
