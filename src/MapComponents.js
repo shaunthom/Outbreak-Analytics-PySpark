@@ -1,42 +1,40 @@
-import React, { Component } from 'react';
-import Plot from 'react-plotly.js';
+import React from 'react';
+import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
+import L from 'leaflet';
 import geojsonData from './output_geojson.json';
-import mapData from './data.json'; 
 
-class MapComponents extends Component {
-  render() {
-    const mapDataConfig = [{
-      type: 'choroplethmapbox',
-      geojson: geojsonData,
-      locations: mapData.locations,
-      z: mapData.z_values,
-      
-    }];
-
-    const layout = {
-      mapbox: {
-        style: "open-street-map",
-        center: { lat: 37.0902, lon: -95.7129 }, 
-        zoom: 2.5, 
+const MapComponents = () => {
+  const onEachFeature = (feature, layer) => {
+    layer.on({
+      mouseover: (event) => {
+        const layer = event.target;
+        layer.bindTooltip(`Statistics: ${feature.properties.YOUR_STAT_PROPERTY}`).openTooltip();
       },
-      autosize: true,
-      dragmode: false
-    };
+      mouseout: (event) => {
+        event.target.closeTooltip();
+      },
+    });
+  };
 
-    const containerStyle = {
-      width: '100%', 
-      height: '900px',   
-    };
+  return (
+    <MapContainer 
+      style={{ height: '100vh', width: '100vw' }} 
+      center={[37.8, -96]}
+      zoom={5} 
+      minZoom={5} 
+      maxZoom={6} 
+      dragging={false}
+      touchZoom={false}
+      scrollWheelZoom={false} 
+      doubleClickZoom={false} 
+      zoomControl={false}
+    >
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <GeoJSON data={geojsonData} onEachFeature={onEachFeature} />
+    </MapContainer>
+  );
+};
 
-    return (
-      <div className="map-container"  style={containerStyle}>
-        <Plot
-          data={mapDataConfig}
-          layout={layout}
-          config={{ staticPlot: true }} 
-        />
-      </div>
-    );
-  }
-}
 export default MapComponents;
