@@ -238,3 +238,17 @@ most_frequent_disease_per_state.show()
 output_file_path = 'D:/Projects/most_frequent_disease_per_state.csv'
 pandas_df = most_frequent_disease_per_state.toPandas()
 pandas_df.to_csv(output_file_path, index=False)
+
+
+import json
+
+file_path = 'D:/Projects/most_frequent_disease_per_state.json'
+with open(file_path, 'r') as file:
+    lines = file.readlines()
+
+json_objects = [json.loads(line) for line in lines]
+json_array = json.dumps(json_objects, indent=4)
+
+output_path = 'D:/Projects/most_frequent_disease_per_state.json'
+with open(output_path, 'w') as file:
+    file.write(json_array)
