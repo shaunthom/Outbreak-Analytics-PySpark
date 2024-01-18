@@ -211,3 +211,30 @@ plt.title('Total Cases by Reporting Area')
 plt.show()
 
 # The map is a visual representation of case counts across the United States
+
+# Getting some datasets:
+
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, udf, row_number
+from pyspark.sql.types import StringType
+from pyspark.sql.window import Window
+import pyspark.sql.functions as F
+
+df = df.withColumn('Total Cases', col('Cumulative YTD Current MMWR Year') + col('Cumulative YTD Previous MMWR Year'))
+disease_total_cases = df.groupBy("Label").sum("Total Cases")
+map_area_udf = udf(map_area_to_state, StringType())
+
+df_mapped = df.withColumn("State", map_area_udf(col("Reporting Area")))
+disease_state_cases = df_mapped.groupBy("State", "Label").agg(F.sum("Total Cases").alias("Total Cases"))
+
+windowSpec = Window.partitionBy("State").orderBy(F.desc("Total Cases"))
+
+most_frequent_disease_per_state = disease_state_cases.withColumn("rank", row_number().over(windowSpec)) \
+                                                     .filter(col("rank") == 1) \
+                                                     .drop("rank")
+
+most_frequent_disease_per_state.show()
+
+output_file_path = 'D:/Projects/most_frequent_disease_per_state.csv'
+pandas_df = most_frequent_disease_per_state.toPandas()
+pandas_df.to_csv(output_file_path, index=False)
