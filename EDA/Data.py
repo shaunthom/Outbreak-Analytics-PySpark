@@ -281,3 +281,35 @@ pandas_df.to_csv(output_file_path, index=False)
 output_file_path = 'D:/Projects/thirdmost_frequent_disease_per_state.csv'
 pandas_df = thirdmost_frequent_disease_per_state.toPandas()
 pandas_df.to_csv(output_file_path, index=False)
+
+
+import json
+
+first_file_path = 'D:/Projects/most_frequent_disease_per_state.json'
+second_file_path = 'D:/Projects/secondmost_frequent_disease_per_state.json'
+third_file_path = 'D:/Projects/thirdmost_frequent_disease_per_state.json'
+
+def read_json_file(file_path):
+    with open(file_path, 'r') as file:
+        return json.load(file)
+
+first_data = read_json_file(first_file_path)
+second_data = read_json_file(second_file_path)
+third_data = read_json_file(third_file_path)
+
+merged_data = {}
+for data in [first_data, second_data, third_data]:
+    for entry in data:
+        state = entry['State']
+        if state not in merged_data:
+            merged_data[state] = {'State': state, 'Diseases': []}
+        merged_data[state]['Diseases'].append({
+            'Label': entry['Label'],
+            'Total Cases': entry['Total Cases']
+        })
+
+final_data = list(merged_data.values())
+
+output_path = 'D:/Projects/combined_frequent_disease_per_state.json'
+with open(output_path, 'w') as file:
+    json.dump(final_data, file, indent=4)
