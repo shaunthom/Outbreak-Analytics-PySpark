@@ -25,7 +25,7 @@ function App() {
           <Route path="/data" element={
             <div>
               <Data />
-              <StateProfileCard /> {/* Include the StateProfileCard component */}
+              <StateProfileCard />
             </div>
           } />
           <Route path="/frequency" element={<MapComponents />} />
