@@ -212,7 +212,9 @@ plt.show()
 
 # The map is a visual representation of case counts across the United States
 
-# Getting some datasets:
+
+######################################################################
+# Getting some datasets and making some json files:
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, udf, row_number
