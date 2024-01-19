@@ -1,0 +1,954 @@
+[
+    {
+        "State": "Alabama",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "77125"
+            },
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "71625"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "32450"
+            }
+        ]
+    },
+    {
+        "State": "Alaska",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "11783"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "10504"
+            },
+            {
+                "Label": "Tuberculosis",
+                "Total Cases": "8097"
+            }
+        ]
+    },
+    {
+        "State": "American Samoa",
+        "Diseases": [
+            {
+                "Label": "Hepatitis C, acute, Probable",
+                "Total Cases": "0"
+            },
+            {
+                "Label": "Meningococcal disease, All serogroups",
+                "Total Cases": "0"
+            },
+            {
+                "Label": "Chlamydia trachomatis infection",
+                "Total Cases": "0"
+            }
+        ]
+    },
+    {
+        "State": "Arizona",
+        "Diseases": [
+            {
+                "Label": "Coccidioidomycosis, Confirmed",
+                "Total Cases": "487048"
+            },
+            {
+                "Label": "Coccidioidomycosis, total",
+                "Total Cases": "487048"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "173842"
+            }
+        ]
+    },
+    {
+        "State": "Arkansas",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "63694"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "50334"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "23410"
+            }
+        ]
+    },
+    {
+        "State": "California",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "753931"
+            },
+            {
+                "Label": "Coccidioidomycosis",
+                "Total Cases": "393075"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "368092"
+            }
+        ]
+    },
+    {
+        "State": "Colorado",
+        "Diseases": [
+            {
+                "Label": "Coccidioidomycosis",
+                "Total Cases": "592977"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "517688"
+            },
+            {
+                "Label": "Coccidioidomycosis, total",
+                "Total Cases": "503077"
+            }
+        ]
+    },
+    {
+        "State": "Connecticut",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "29635"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "14544"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "14381"
+            }
+        ]
+    },
+    {
+        "State": "Delaware",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "17219"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "14947"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "8102"
+            }
+        ]
+    },
+    {
+        "State": "District of Columbia",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "3887"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "3069"
+            },
+            {
+                "Label": "Shigellosis",
+                "Total Cases": "2958"
+            }
+        ]
+    },
+    {
+        "State": "Florida",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "1499876"
+            },
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "1463607"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "331077"
+            }
+        ]
+    },
+    {
+        "State": "Georgia",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "172382"
+            },
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "143942"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "46018"
+            }
+        ]
+    },
+    {
+        "State": "Guam",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "39023"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "24906"
+            },
+            {
+                "Label": "Tuberculosis",
+                "Total Cases": "14460"
+            }
+        ]
+    },
+    {
+        "State": "Hawaii",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "1025692"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "513846"
+            },
+            {
+                "Label": "Shigellosis",
+                "Total Cases": "397476"
+            }
+        ]
+    },
+    {
+        "State": "Idaho",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "19370"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "15356"
+            },
+            {
+                "Label": "Giardiasis",
+                "Total Cases": "11192"
+            }
+        ]
+    },
+    {
+        "State": "Illinois",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "647059"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "630630"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "242038"
+            }
+        ]
+    },
+    {
+        "State": "Indiana",
+        "Diseases": [
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "57894"
+            },
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "57080"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "42629"
+            }
+        ]
+    },
+    {
+        "State": "Iowa",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "68991"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "47311"
+            },
+            {
+                "Label": "Cryptosporidiosis",
+                "Total Cases": "42917"
+            }
+        ]
+    },
+    {
+        "State": "Kansas",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "45742"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "27995"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "19987"
+            }
+        ]
+    },
+    {
+        "State": "Kentucky",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "53773"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "50059"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "24617"
+            }
+        ]
+    },
+    {
+        "State": "Louisiana",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "93815"
+            },
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "70723"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "32064"
+            }
+        ]
+    },
+    {
+        "State": "Maine",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "21255"
+            },
+            {
+                "Label": "Babesiosis",
+                "Total Cases": "14970"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "12246"
+            }
+        ]
+    },
+    {
+        "State": "Maryland",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "75939"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "32015"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "30564"
+            }
+        ]
+    },
+    {
+        "State": "Massachusetts",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "283964"
+            },
+            {
+                "Label": "Ehrlichiosis and Anaplasmosis, Anaplasma phagocytophilum infection",
+                "Total Cases": "267316"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "184675"
+            }
+        ]
+    },
+    {
+        "State": "Michigan",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "91699"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "78893"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "57644"
+            }
+        ]
+    },
+    {
+        "State": "Minnesota",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "382675"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "340383"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "182853"
+            }
+        ]
+    },
+    {
+        "State": "Mississippi",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "72390"
+            },
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "49548"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "17670"
+            }
+        ]
+    },
+    {
+        "State": "Missouri",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "114324"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "79281"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "45311"
+            }
+        ]
+    },
+    {
+        "State": "Montana",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "23722"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "12500"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "9488"
+            }
+        ]
+    },
+    {
+        "State": "Nebraska",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "34756"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "21862"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "18712"
+            }
+        ]
+    },
+    {
+        "State": "Nevada",
+        "Diseases": [
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "26863"
+            },
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "23395"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "8995"
+            }
+        ]
+    },
+    {
+        "State": "New Hampshire",
+        "Diseases": [
+            {
+                "Label": "Ehrlichiosis and Anaplasmosis, Anaplasma phagocytophilum infection",
+                "Total Cases": "19473"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "18913"
+            },
+            {
+                "Label": "Giardiasis",
+                "Total Cases": "7128"
+            }
+        ]
+    },
+    {
+        "State": "New Jersey",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "84617"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "62527"
+            },
+            {
+                "Label": "Shigellosis",
+                "Total Cases": "44771"
+            }
+        ]
+    },
+    {
+        "State": "New Mexico",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "45483"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "36960"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "33543"
+            }
+        ]
+    },
+    {
+        "State": "New York",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "841321"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "739307"
+            },
+            {
+                "Label": "Giardiasis",
+                "Total Cases": "447771"
+            }
+        ]
+    },
+    {
+        "State": "North Carolina",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "145656"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "141743"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "30197"
+            }
+        ]
+    },
+    {
+        "State": "North Dakota",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "9849"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "6950"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "6191"
+            }
+        ]
+    },
+    {
+        "State": "Northern Mariana Islands",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "49"
+            },
+            {
+                "Label": "Q fever, Acute",
+                "Total Cases": "0"
+            },
+            {
+                "Label": "Vancomycin-resistant Staphylococcus aureus",
+                "Total Cases": "0"
+            }
+        ]
+    },
+    {
+        "State": "Ohio",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "192994"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "128327"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "97674"
+            }
+        ]
+    },
+    {
+        "State": "Oklahoma",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "66985"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "48033"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "19374"
+            }
+        ]
+    },
+    {
+        "State": "Oregon",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "100101"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "43709"
+            },
+            {
+                "Label": "Giardiasis",
+                "Total Cases": "35072"
+            }
+        ]
+    },
+    {
+        "State": "Pennsylvania",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "145360"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "127374"
+            },
+            {
+                "Label": "Ehrlichiosis and Anaplasmosis, Anaplasma phagocytophilum infection",
+                "Total Cases": "66112"
+            }
+        ]
+    },
+    {
+        "State": "Puerto Rico",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "36432"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "24677"
+            },
+            {
+                "Label": "Leptospirosis",
+                "Total Cases": "11387"
+            }
+        ]
+    },
+    {
+        "State": "Rhode Island",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "13005"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "11081"
+            },
+            {
+                "Label": "Babesiosis",
+                "Total Cases": "10863"
+            }
+        ]
+    },
+    {
+        "State": "South Carolina",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "65410"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "60163"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "36045"
+            }
+        ]
+    },
+    {
+        "State": "South Dakota",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "32749"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "20408"
+            },
+            {
+                "Label": "Cryptosporidiosis",
+                "Total Cases": "11880"
+            }
+        ]
+    },
+    {
+        "State": "Tennessee",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "411205"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "393523"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "192117"
+            }
+        ]
+    },
+    {
+        "State": "Texas",
+        "Diseases": [
+            {
+                "Label": "Campylobacteriosis",
+                "Total Cases": "922717"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "917320"
+            },
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "282132"
+            }
+        ]
+    },
+    {
+        "State": "Utah",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "38159"
+            },
+            {
+                "Label": "Cryptosporidiosis",
+                "Total Cases": "25235"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "23534"
+            }
+        ]
+    },
+    {
+        "State": "Vermont",
+        "Diseases": [
+            {
+                "Label": "Gonorrhea",
+                "Total Cases": "11020"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "9349"
+            },
+            {
+                "Label": "Babesiosis",
+                "Total Cases": "3772"
+            }
+        ]
+    },
+    {
+        "State": "Virgin Islands",
+        "Diseases": [
+            {
+                "Label": "Tetanus",
+                "Total Cases": "83"
+            },
+            {
+                "Label": "Giardiasis",
+                "Total Cases": "76"
+            },
+            {
+                "Label": "Varicella morbidity",
+                "Total Cases": "73"
+            }
+        ]
+    },
+    {
+        "State": "Virginia",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "108239"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "80497"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "37401"
+            }
+        ]
+    },
+    {
+        "State": "Washington",
+        "Diseases": [
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "132604"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "71241"
+            },
+            {
+                "Label": "Shigellosis",
+                "Total Cases": "51337"
+            }
+        ]
+    },
+    {
+        "State": "West Virginia",
+        "Diseases": [
+            {
+                "Label": "Invasive pneumococcal disease, all ages, Confirmed",
+                "Total Cases": "25351"
+            },
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "17888"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "14305"
+            }
+        ]
+    },
+    {
+        "State": "Wisconsin",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "94072"
+            },
+            {
+                "Label": "Syphilis, Primary and secondary",
+                "Total Cases": "62147"
+            },
+            {
+                "Label": "Ehrlichiosis and Anaplasmosis, Anaplasma phagocytophilum infection",
+                "Total Cases": "53009"
+            }
+        ]
+    },
+    {
+        "State": "Wyoming",
+        "Diseases": [
+            {
+                "Label": "Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection)",
+                "Total Cases": "8509"
+            },
+            {
+                "Label": "Shiga toxin-producing Escherichia coli (STEC)",
+                "Total Cases": "6590"
+            },
+            {
+                "Label": "Giardiasis",
+                "Total Cases": "3330"
+            }
+        ]
+    }
+]
