@@ -255,7 +255,7 @@ most_frequent_disease_per_state = disease_state_cases.withColumn("rank", row_num
                                                      .filter(col("rank") == 1) \
                                                      .drop("rank")
 
-hmost_frequent_disease_per_state.show()
+most_frequent_disease_per_state.show()
 
 
 secondmost_frequent_disease_per_state = disease_state_cases.withColumn("rank", row_number().over(windowSpec)) \
@@ -269,3 +269,15 @@ thirdmost_frequent_disease_per_state = disease_state_cases.withColumn("rank", ro
                                                      .drop("rank")
 
 thirdmost_frequent_disease_per_state.show()
+
+output_file_path = 'D:/Projects/most_frequent_disease_per_state.csv'
+pandas_df = most_frequent_disease_per_state.toPandas()
+pandas_df.to_csv(output_file_path, index=False)
+
+output_file_path = 'D:/Projects/secondmost_frequent_disease_per_state.csv'
+pandas_df = secondmost_frequent_disease_per_state.toPandas()
+pandas_df.to_csv(output_file_path, index=False)
+
+output_file_path = 'D:/Projects/thirdmost_frequent_disease_per_state.csv'
+pandas_df = thirdmost_frequent_disease_per_state.toPandas()
+pandas_df.to_csv(output_file_path, index=False)
