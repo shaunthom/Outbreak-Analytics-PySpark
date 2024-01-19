@@ -1,0 +1,88 @@
+.state-profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .profile-details {
+    border: 1px solid #8a2be2;
+    border-radius: 8px;
+    min-height: 400px;
+    padding: 20px; 
+    margin: 0 20px;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 800px;
+    background-color: black; 
+    box-shadow: 0 4px 8px rgba(138, 43, 226, 0.2); 
+    color: #8a2be2;
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-header h2 {
+    color: #8a2be2; 
+    margin: 0;
+  }
+  
+  .profile-header .state-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px; 
+    padding: 10px;
+    border-bottom: 1px solid #8a2be2;
+    color: #FFFFFF;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  h2, h3 {
+    color: #8a2be2;
+    margin: 0 0 20px 0;
+  }
+  
+  button {
+    background-color: #8a2be2;
+    border: none;
+    padding: 12px 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #1be282;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .state-profile-card {
+      flex-direction: column;
+    }
+  
+    button {
+      margin: 10px 0;
+    }
+  }
+  
