@@ -241,14 +241,21 @@ pandas_df.to_csv(output_file_path, index=False)
 
 
 import json
+most_frequent_disease_per_state = disease_state_cases.withColumn("rank", row_number().over(windowSpec)) \
+                                                     .filter(col("rank") == 1) \
+                                                     .drop("rank")
 
-file_path = 'D:/Projects/most_frequent_disease_per_state.json'
-with open(file_path, 'r') as file:
-    lines = file.readlines()
+hmost_frequent_disease_per_state.show()
 
-json_objects = [json.loads(line) for line in lines]
-json_array = json.dumps(json_objects, indent=4)
 
-output_path = 'D:/Projects/most_frequent_disease_per_state.json'
-with open(output_path, 'w') as file:
-    file.write(json_array)
+secondmost_frequent_disease_per_state = disease_state_cases.withColumn("rank", row_number().over(windowSpec)) \
+                                                     .filter(col("rank") == 2) \
+                                                     .drop("rank")
+
+secondmost_frequent_disease_per_state.show()
+
+thirdmost_frequent_disease_per_state = disease_state_cases.withColumn("rank", row_number().over(windowSpec)) \
+                                                     .filter(col("rank") == 3) \
+                                                     .drop("rank")
+
+thirdmost_frequent_disease_per_state.show()
