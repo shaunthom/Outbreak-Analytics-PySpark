@@ -11,6 +11,8 @@ df.printSchema()
 df.show(n=5)
 
 
+######################################################################
+######################################################################
 # Data Preprocessing:
 
 from pyspark.sql.functions import col, count, when
@@ -68,6 +70,9 @@ grouped_data = df.groupBy("Label").agg(
 )
 grouped_data.show()
 
+
+######################################################################
+######################################################################
 # Correlation Matrix
 
 from pyspark.ml.feature import StringIndexer, VectorAssembler
@@ -99,6 +104,9 @@ area_total_cases = df.groupBy("Reporting Area").sum("Total Cases")
 
 frequency_area = area_total_cases.orderBy('sum(Total Cases)', ascending=False).show()
 
+
+######################################################################
+######################################################################
 ## GEOSPATIAL ANALYSIS
 
 area_total_cases_pd = area_total_cases.toPandas()
@@ -212,7 +220,7 @@ plt.show()
 
 # The map is a visual representation of case counts across the United States
 
-
+######################################################################
 ######################################################################
 # Getting some datasets and making some json files:
 
