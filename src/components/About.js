@@ -12,7 +12,15 @@ const About = () => {
         <h3 className={styles.projectTitle}>Big Data for Epidemiological Mapping</h3>
         
         <h4 className={styles.subTitle}>Introduction</h4>
-        <p>This project is a web application developed to visualize and analyze epidemiological data, focusing on disease reporting and outbreak patterns. This project harnesses the power of big data to facilitate better understanding and management of public health trends. Some of the techstacks I used in this project include React JS, HTML, CSS, PySpark and Python among many.</p>
+        <p>This project is a web application developed to visualize and analyze epidemiological data, focusing on disease reporting and outbreak patterns. This project harnesses the power of big data to facilitate better understanding and management of public health trends. Some of the techstacks I used in this project include:<br></br>
+        <br />
+        <img src="/logo192.png" alt="React" title="React JS" width="70" height="40" style={{ marginRight: '10px' }} />   
+        <img src="/HTML_logo.png" alt="HTML" title="HTML" width="70" height="40" style={{ marginRight: '10px' }} />
+        <img src="/CSS_logo.png" alt="CSS" title="CSS" width="70" height="40" style={{ marginRight: '10px' }} />
+        <img src="/pyspark.jpeg" alt="PySpark" title="PySpark" width="70" height="40" style={{ marginRight: '10px' }} />
+        <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" title="Python" width="70" height="40" />
+
+        </p>  
 
         <h4 className={styles.subTitle}>Motivation</h4>
         <p>The inspiration behind this project stems from a desire to apply statistical techniques such as hypothesis testing, regression, and dimensionality reduction (PCA) in a real-world context. Additionally, this project serves as a platform to showcase my skills in React JS, HTML, and CSS, tying together advanced data analysis with a user-friendly frontend.</p>
