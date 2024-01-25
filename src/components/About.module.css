@@ -1,0 +1,36 @@
+.container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.title {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.projectTitle {
+  color: #0077b6;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.projectTitle a {
+  color: #0077b6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.projectTitle a:hover {
+  color: #0292c9;
+}
+
+.githubIcon {
+  color: #333;
+  font-size: 24px;
+}
