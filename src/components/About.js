@@ -7,6 +7,28 @@ import styles from './About.module.css';
 const About = () => {
   return (
     <div className={styles.container}>
+      <h2 className={styles.title}>Project Overview</h2>
+      <div className={styles.project}>
+        <h3 className={styles.projectTitle}>Big Data for Epidemiological Mapping</h3>
+        
+        <h4 className={styles.subTitle}>Introduction</h4>
+        <p>This project is a web application developed to visualize and analyze epidemiological data, focusing on disease reporting and outbreak patterns. This project harnesses the power of big data to facilitate better understanding and management of public health trends. Some of the techstacks I used in this project include React JS, HTML, CSS, PySpark and Python among many.</p>
+
+        <h4 className={styles.subTitle}>Motivation</h4>
+        <p>The inspiration behind this project stems from a desire to apply statistical techniques such as hypothesis testing, regression, and dimensionality reduction (PCA) in a real-world context. Additionally, this project serves as a platform to showcase my skills in React JS, HTML, and CSS, tying together advanced data analysis with a user-friendly frontend.</p>
+
+        <h4 className={styles.subTitle}>Data Source</h4>
+        <p>The data for this project is sourced from the Centers for Disease Control and Prevention (CDC), ensuring reliability and accuracy in the information presented.</p>
+
+        <h4 className={styles.subTitle}>Challenges and Achievements</h4>
+        <p>One of the main challenges was managing and processing the extensive dataset effectively. However, this was adeptly addressed using PySpark, allowing for efficient data handling and analysis. The integration of a frontend using React JS presented another layer of complexity, successfully adding an interactive and informative dimension to the project.</p>
+
+        <h4 className={styles.subTitle}>Future Plans</h4>
+        <p>Looking ahead, the goal is to integrate a backend system to enable automatic updates of the content. This enhancement will ensure that the application remains current and reduces the need for manual redeployments.</p>
+
+        <h4 className={styles.subTitle}>Acknowledgements</h4>
+        <p>This project was independently developed, fueled by personal ambition and a passion for data science and web development. I owe special thanks to some experienced data scientists and software developers who provided invaluable advice on how to effectively showcase this work, particularly emphasizing the importance of integrating both frontend and backend elements.</p>
+     </div>
       <h2 className={styles.title}>My Other Works</h2>
       
       <h3 className={styles.projectTitle}>Sports Data Analytics Application: AI Huddle                       <a href="https://github.com/shaunthom/Football_Analytics_Mobile_App" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> </a></h3>
