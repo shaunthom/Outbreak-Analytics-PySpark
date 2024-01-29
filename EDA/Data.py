@@ -313,3 +313,7 @@ final_data = list(merged_data.values())
 output_path = 'D:/Projects/combined_frequent_disease_per_state.json'
 with open(output_path, 'w') as file:
     json.dump(final_data, file, indent=4)
+
+######################################################################
+######################################################################
+K-Means Clustering
