@@ -317,3 +317,27 @@ with open(output_path, 'w') as file:
 ######################################################################
 ######################################################################
 K-Means Clustering
+
+with open('D:/Projects/website/Outbreak-Analytics-PySpark/src/combined_frequent_disease_per_state.json', 'r') as f:
+    data = json.load(f)
+data_normalized = pd.json_normalize(data, 'Diseases', ['State'])
+
+data_normalized['Total Cases'] = pd.to_numeric(data_normalized['Total Cases'], errors='coerce').fillna(0)
+data_pivoted = data_normalized.pivot_table(index='State', 
+                                           columns='Label', 
+                                           values='Total Cases', 
+                                           aggfunc='sum', 
+                                           fill_value=0).reset_index()
+
+features = data_pivoted[['Syphilis, Primary and secondary', 'Campylobacteriosis']].fillna(0)
+
+scaler = StandardScaler()
+features_scaled = scaler.fit_transform(features)
+
+# Performing K-means clustering
+kmeans = KMeans(n_clusters=5, random_state=42)
+clusters = kmeans.fit_predict(features_scaled)
+data_pivoted['Cluster'] = clusters
+
+#Saving it in local device for easier use in future:
+data_pivoted.to_csv('D:/Projects/website/Outbreak-Analytics-PySpark/src/data_pivoted.csv', index=False)
