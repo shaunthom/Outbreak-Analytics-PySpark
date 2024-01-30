@@ -19,19 +19,16 @@ const Model = () => {
       });
   }, []);
 
-  const manuallyGreenStates = ['Idaho', 'Oklahoma', 'Kansas', 'Virginia', 'North Carolina', 'Iowa', 'Nebraska', 'Utah'];
-  const manuallyRedStates = ['Wisconsin','District of Columbia'];
-  const greenPoints = { x: [], y: [], mode: 'lines+markers', type: 'scatter', name: 'Green Points', line: { color: 'green' }, text: [], hoverinfo: 'text', marker: { size: 12, color: 'green' }};
-  const redPoints = { x: [], y: [], mode: 'lines+markers', type: 'scatter', name: 'Red Points', line: { color: 'red' }, text: [], hoverinfo: 'text', marker: { size: 12, color: 'red' }};
+  const greenStates = ['Idaho', 'Oklahoma', 'Kansas', 'Virginia', 'North Carolina', 'Iowa', 'Nebraska', 'Utah'];
+  const greenPoints = { x: [], y: [], mode: 'lines+markers', type: 'scatter', name: 'Cluster 2', line: { color: 'green' }, text: [], hoverinfo: 'text', marker: { size: 12, color: 'green' }};
+  const redPoints = { x: [], y: [], mode: 'lines+markers', type: 'scatter', name: 'Cluster 1', line: { color: 'red' }, text: [], hoverinfo: 'text', marker: { size: 12, color: 'red' }};
 
   data.forEach(row => {
     const syphilisCases = row['Syphilis, Primary and secondary'];
     const campylobacteriosisCases = row['Campylobacteriosis'];
-    const isManuallyGreen = manuallyGreenStates.includes(row['State']);
-    const isManuallyRed = manuallyRedStates.includes(row['State']);
-    const isGreen = isManuallyGreen || (!isManuallyRed && syphilisCases <= 10000 && campylobacteriosisCases <= 10000);
+    const isGreenState = greenStates.includes(row['State']);
 
-    if (isGreen) {
+    if (isGreenState) {
       greenPoints.x.push(syphilisCases);
       greenPoints.y.push(campylobacteriosisCases);
       greenPoints.text.push(row['State']);
@@ -51,7 +48,7 @@ const Model = () => {
           data={plotData}
           layout={{
             title: 'State Clusters based on Disease Cases',
-            xaxis: { title: 'Syphilis, Primary and secondary Cases' },
+            xaxis: { title: 'Syphilis Cases' },
             yaxis: { title: 'Campylobacteriosis Cases' },
             hovermode: 'closest',
             autosize: true,
