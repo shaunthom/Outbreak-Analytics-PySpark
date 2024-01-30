@@ -4,12 +4,20 @@ import Papa from 'papaparse';
 
 
 const Model = () => {
-  return (
-    <div>
-      <h1>Model</h1>
-      {/* Add content for the Model section */}
-    </div>
-  );
-};
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('data_pivoted.csv')
+      .then(response => response.text())
+      .then(csvData => {
+        Papa.parse(csvData, {
+          header: true,
+          dynamicTyping: true,
+          complete: (result) => {
+            setData(result.data);
+          }
+        });
+      });
+  }, []);
 
 export default Model;
