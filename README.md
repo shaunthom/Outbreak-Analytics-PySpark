@@ -49,6 +49,15 @@ Advanced Statistical Techniques: Employs machine learning algorithms such as Ran
 
 Web Application: A user-friendly frontend developed with React JS, HTML, and CSS showcases the data visualizations and allows for intuitive interaction with the analysis results.
 
+## Results:
+
+The following is a screenshot of the frequency tab of my website. It showcases the most frequent diseases in different regions of the United States, complete with case numbers. For example, it lists Salmonellosis as the most frequent disease in one state with over 8,000 reported instances. This tool can be used to track and analyze disease prevalence for monitoring public health.
+
+![frequency](https://github.com/shaunthom/Outbreak-Analytics-PySpark/assets/134566032/5822508e-76f5-4f23-ad36-fe54b0f7b778)
+
+
+
+
 ## Future Enhancements:
 
 I have plans to include integrating a backend system for automatic data updates to keep the application current with minimal manual intervention. Stay tuned!
