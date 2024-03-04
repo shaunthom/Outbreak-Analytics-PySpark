@@ -52,3 +52,7 @@ Web Application: A user-friendly frontend developed with React JS, HTML, and CSS
 ## Future Enhancements:
 
 I have plans to include integrating a backend system for automatic data updates to keep the application current with minimal manual intervention. Stay tuned!
+
+## Contributing:
+
+Contributions to improve the functionality or efficiency of the code are welcome. Please follow the standard GitHub pull request process.
