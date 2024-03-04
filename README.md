@@ -56,7 +56,9 @@ The following is a screenshot of the frequency tab of my website. It showcases t
 ![frequency](https://github.com/shaunthom/Outbreak-Analytics-PySpark/assets/134566032/5822508e-76f5-4f23-ad36-fe54b0f7b778)
 
 
+
 The next screenshot shows a feature of a web application that provides health profiles for individual states, in this case, Alaska. The health profile includes a list of the top diseases for the year 2022, offering a quick reference to public health data and disease prevalence within the state. These state cards are designed to inform users about the most common health concerns and the number of cases reported, which can be essential for public health planning, resource allocation, and disease prevention efforts. The states can be navigated using the left and right button as well.
+
 
 ![Data](https://github.com/shaunthom/Outbreak-Analytics-PySpark/assets/134566032/cab5ca3f-2596-497b-948b-a965cc8bedbc)
 
