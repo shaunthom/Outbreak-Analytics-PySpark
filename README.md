@@ -4,11 +4,11 @@ This project is a web application designed to visualize and analyze epidemiologi
 
 ## Inspiration: 
 
-Inspired by the potential of statistical techniques like hypothesis testing, regression, and dimensionality reduction (PCA) in addressing real-world challenges, this project aims to apply these methods to public health data. It serves as a platform to exhibit proficiency in web development and data analysis, illustrating how they can be combined to create accessible and impactful public health tools.
+Inspired by the potential of statistical techniques like hypothesis testing, regression, and dimensionality reduction techniques like PCA in addressing real-world challenges, this project aims to apply these methods to public health data. It serves as a platform to exhibit proficiency in web development and data analysis, illustrating how they can be combined to create accessible and impactful public health tools.
 
 ## Data Source:
 
-The data utilized in this project is sourced from the Centers for Disease Control and Prevention (CDC), ensuring high reliability and accuracy for the analysis. This choice underlines the project's commitment to providing meaningful insights based on trustworthy data.
+The data utilized in this project is sourced from the Centers for Disease Control and Prevention (CDC), ensuring high reliability and accuracy for the analysis. My project is committed to providing meaningful insights based on trustworthy data.
 
 ## Features:
 
