@@ -51,17 +51,22 @@ Web Application: A user-friendly frontend developed with React JS, HTML, and CSS
 
 ## Results:
 
-The following is a screenshot of the frequency tab of my website. It showcases the most frequent diseases in different regions of the United States, complete with case numbers. For example, it lists Salmonellosis as the most frequent disease in one state with over 8,000 reported instances. This tool can be used to track and analyze disease prevalence for monitoring public health.
+ • The following is a screenshot of the frequency tab of my website. It showcases the most frequent diseases in different regions of the United States, complete with case numbers. For example, it lists Salmonellosis as the most frequent disease in one state with over 8,000 reported instances. This tool can be used to track and analyze disease prevalence for monitoring public health.
 
 ![frequency](https://github.com/shaunthom/Outbreak-Analytics-PySpark/assets/134566032/5822508e-76f5-4f23-ad36-fe54b0f7b778)
 
 
 
-The next screenshot shows a feature of a web application that provides health profiles for individual states, in this case, Alaska. The health profile includes a list of the top diseases for the year 2022, offering a quick reference to public health data and disease prevalence within the state. These state cards are designed to inform users about the most common health concerns and the number of cases reported, which can be essential for public health planning, resource allocation, and disease prevention efforts. The states can be navigated using the left and right button as well.
+ • The next screenshot shows a feature of a web application that provides health profiles for individual states, in this case, Alaska. The health profile includes a list of the top diseases for the year 2022, offering a quick reference to public health data and disease prevalence within the state. These state cards are designed to inform users about the most common health concerns and the number of cases reported, which can be essential for public health planning, resource allocation, and disease prevention efforts. The states can be navigated using the left and right button as well.
 
 
 ![Data](https://github.com/shaunthom/Outbreak-Analytics-PySpark/assets/134566032/cab5ca3f-2596-497b-948b-a965cc8bedbc)
 
+
+ • The screenshot is of an "About" page detailing the web application, the project's foundation in applying advanced data analysis and statistical methods within a real-world context. The page also outlines the project's challenges, particularly in data processing, and the solutions implemented to address these issues.This is simply a documentation webpage for those tech enthusiasts!
+
+ 
+![about](https://github.com/shaunthom/Outbreak-Analytics-PySpark/assets/134566032/3b3faa39-d3fe-45aa-b68d-e6f50606296f)
 
 ## Future Enhancements:
 
